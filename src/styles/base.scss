@@ -1,0 +1,45 @@
+@import '~styles/reset';
+@import '~styles/fonts.css';
+@import '~styles/config';
+
+html,
+body {
+    min-height: 100vh;
+
+    background-color: $color-background;
+}
+
+html {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: scroll; // always show the vertical scrollbar so that content doesn't jump
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: $font-family;
+    text-size-adjust: 100%; // iOS on orientation change
+    color: $color-font;
+}
+
+// placeholders
+input,
+textarea,
+select {
+    &::-webkit-input-placeholder {
+        color: $color-placeholder;
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+        color: $color-placeholder;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color-placeholder;
+    }
+}

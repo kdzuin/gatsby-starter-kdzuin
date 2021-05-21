@@ -1,0 +1,98 @@
+@import '~styles/config';
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    background-color: inherit;
+    color: inherit;
+
+    &::before {
+        content: '';
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: inherit;
+        background-image: inherit;
+    }
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.blockSticky {
+    @media (min-height: 400px) {
+        position: sticky;
+        z-index: 2;
+    }
+
+    :global(.scroll-position-preserver) & {
+        position: relative;
+    }
+}
+
+.blockAlignTop {
+    margin-top: 0;
+}
+
+.blockAlignCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    & + & {
+        margin-top: 0;
+    }
+}
+
+.blockAlignStretch {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.blockAlignBottom {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.blockAlignCenter + .blockAlignBottom {
+    margin-top: 0;
+}
+
+.blockAlignStretch + .blockAlignBottom {
+    margin-top: 0;
+}
+
+.blockPaddingVertical {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    & + & {
+        padding-top: 0;
+    }
+}
+
+.blockPaddingHorizontal {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: 600px) {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+}
+
+.blockWidthLimited {
+    max-width: 880px + 48px + 48px;
+    margin-right: auto;
+    margin-left: auto;
+}
