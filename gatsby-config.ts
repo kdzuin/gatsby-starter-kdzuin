@@ -1,7 +1,7 @@
 import { GatsbyConfig } from 'gatsby';
 
 const siteMetadata: GatsbyConfig['siteMetadata'] = {
-    title: 'MyTasteStarter',
+    title: 'Gatsby Starter',
     siteUrl: `https://www.example.com`,
 };
 
