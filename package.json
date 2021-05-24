@@ -7,6 +7,7 @@
     "keywords": [
         "gatsby"
     ],
+    "license": "0BSD",
     "scripts": {
         "develop": "gatsby develop",
         "start": "gatsby develop",
@@ -47,5 +48,9 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kdzuin/gatsby-starter-kdzuin"
     }
 }
