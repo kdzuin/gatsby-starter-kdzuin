@@ -1,15 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { Screen, ScreenContent } from 'components/screen';
+import { Page, PageContent } from 'components/page';
 
 // markup
 const IndexPage = () => {
     return (
         <>
             <Helmet title="Home" />
-            <Screen>
-                <ScreenContent vPadded={true} hPadded={true} limited={true}>
+            <Page>
+                <PageContent vPadded={true} hPadded={true} limited={true}>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Quae et iusto aut eveniet labore quam rerum
@@ -17,8 +17,8 @@ const IndexPage = () => {
                         consectetur, sapiente consequuntur velit illum corrupti?
                         Fugit, sunt.
                     </p>
-                </ScreenContent>
-            </Screen>
+                </PageContent>
+            </Page>
         </>
     );
 };

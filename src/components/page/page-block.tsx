@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import cx from 'classnames';
-import * as styles from './screen.module.scss';
+import * as styles from './page.module.scss';
 
 export enum ScreenBlockAlign {
     TOP,

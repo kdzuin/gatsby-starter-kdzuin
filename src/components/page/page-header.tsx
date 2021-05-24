@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ScreenBlock, ScreenBlockAlign } from 'components/screen/screen-block';
+import { ScreenBlock, ScreenBlockAlign } from 'components/page/page-block';
 
 interface ScreenHeaderProps {
     children: React.ReactNode;

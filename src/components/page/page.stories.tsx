@@ -1,15 +1,14 @@
 import React from 'react';
-import {
-    Screen,
-    ScreenHeader,
-    ScreenContent,
-    ScreenFooter,
-} from 'components/screen';
+import { Page, PageHeader, PageContent, PageFooter } from 'components/page';
 
 export default {
-    title: 'UI/Screen',
-    component: Screen,
-    subcomponents: { ScreenContent, ScreenHeader, ScreenFooter },
+    title: 'UI/Page',
+    component: Page,
+    subcomponents: {
+        ScreenContent: PageContent,
+        ScreenHeader: PageHeader,
+        ScreenFooter: PageFooter,
+    },
     parameters: { docs: { inlineStories: false } },
 };
 
@@ -35,69 +34,69 @@ const Placeholder: React.FunctionComponent<{ height?: number }> = ({
 );
 
 export const Default = () => (
-    <Screen>
-        <ScreenHeader>
+    <Page>
+        <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
-        </ScreenHeader>
-        <ScreenContent>
+        </PageHeader>
+        <PageContent>
             <Placeholder>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenContent>
+        </PageContent>
+        <PageContent>
             <Placeholder>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenFooter>
+        </PageContent>
+        <PageFooter>
             <Placeholder>ScreenFooter</Placeholder>
-        </ScreenFooter>
-    </Screen>
+        </PageFooter>
+    </Page>
 );
 
 export const LongPage = () => (
-    <Screen>
-        <ScreenHeader>
+    <Page>
+        <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
-        </ScreenHeader>
-        <ScreenContent>
+        </PageHeader>
+        <PageContent>
             <Placeholder height={800}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenContent>
+        </PageContent>
+        <PageContent>
             <Placeholder height={800}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenFooter>
+        </PageContent>
+        <PageFooter>
             <Placeholder>ScreenFooter</Placeholder>
-        </ScreenFooter>
-    </Screen>
+        </PageFooter>
+    </Page>
 );
 
 export const PaddedContentBlocks = () => (
-    <Screen>
-        <ScreenHeader>
+    <Page>
+        <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
-        </ScreenHeader>
-        <ScreenContent hPadded={true}>
+        </PageHeader>
+        <PageContent hPadded={true}>
             <Placeholder height={300}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenContent hPadded={true} vPadded={true}>
+        </PageContent>
+        <PageContent hPadded={true} vPadded={true}>
             <Placeholder height={300}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenFooter>
+        </PageContent>
+        <PageFooter>
             <Placeholder>ScreenFooter</Placeholder>
-        </ScreenFooter>
-    </Screen>
+        </PageFooter>
+    </Page>
 );
 
 export const PaddedAndLimitedBlocks = () => (
-    <Screen>
-        <ScreenHeader>
+    <Page>
+        <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
-        </ScreenHeader>
-        <ScreenContent hPadded={true} limited={true}>
+        </PageHeader>
+        <PageContent hPadded={true} limited={true}>
             <Placeholder height={300}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenContent hPadded={true} vPadded={true} limited={true}>
+        </PageContent>
+        <PageContent hPadded={true} vPadded={true} limited={true}>
             <Placeholder height={300}>ScreenContent</Placeholder>
-        </ScreenContent>
-        <ScreenFooter>
+        </PageContent>
+        <PageFooter>
             <Placeholder>ScreenFooter</Placeholder>
-        </ScreenFooter>
-    </Screen>
+        </PageFooter>
+    </Page>
 );
