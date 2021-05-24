@@ -35,7 +35,7 @@ export const ScreenBlock: React.FunctionComponent<ScreenBlockProps> = ({
     sticky,
     stickyPosition,
     children,
-    qaRole = 'screen-block',
+    qaRole = 'page-block',
 }) => {
     return (
         <div

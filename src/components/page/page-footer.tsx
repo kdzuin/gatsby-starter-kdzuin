@@ -12,7 +12,7 @@ export const ScreenFooter: React.FunctionComponent<ScreenFooterProps> = ({
     <ScreenBlock
         align={ScreenBlockAlign.BOTTOM}
         hPadded={false}
-        qaRole={'screen-footer'}
+        qaRole={'page-footer'}
     >
         {children}
     </ScreenBlock>

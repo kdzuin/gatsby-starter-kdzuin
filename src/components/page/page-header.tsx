@@ -17,7 +17,7 @@ export const ScreenHeader: React.FunctionComponent<ScreenHeaderProps> = ({
         <ScreenBlock
             align={ScreenBlockAlign.TOP}
             hPadded={true}
-            qaRole={'screen-header'}
+            qaRole={'page-header'}
         >
             {children}
         </ScreenBlock>
