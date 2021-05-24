@@ -10,6 +10,7 @@ const IndexPage = () => {
             <Helmet title="Home" />
             <Page>
                 <PageContent vPadded={true} hPadded={true} limited={true}>
+                    <h1>Page title</h1>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Quae et iusto aut eveniet labore quam rerum

@@ -1,6 +1,7 @@
 @import '~styles/reset';
 @import '~styles/fonts.css';
 @import '~styles/config';
+@import '~styles/typography';
 
 html,
 body {
@@ -21,7 +22,6 @@ html {
 body {
     position: relative;
     margin: 0;
-    font-family: $font-family;
     text-size-adjust: 100%; // iOS on orientation change
     color: $color-font;
 }
