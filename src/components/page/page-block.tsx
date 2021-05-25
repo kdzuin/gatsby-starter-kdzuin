@@ -3,22 +3,22 @@ import React, { useContext } from 'react';
 import cx from 'classnames';
 import * as styles from './page.module.scss';
 
-export enum ScreenBlockAlign {
+export enum PageBlockAlign {
     TOP,
     CENTER,
     BOTTOM,
     STRETCH,
 }
 
-const mapScreenBlockAlignToClassnames: { [key in ScreenBlockAlign]: string } = {
-    [ScreenBlockAlign.TOP]: styles.blockAlignTop,
-    [ScreenBlockAlign.CENTER]: styles.blockAlignCenter,
-    [ScreenBlockAlign.BOTTOM]: styles.blockAlignBottom,
-    [ScreenBlockAlign.STRETCH]: styles.blockAlignStretch,
+const mapPageBlockAlignToClassnames: { [key in PageBlockAlign]: string } = {
+    [PageBlockAlign.TOP]: styles.blockAlignTop,
+    [PageBlockAlign.CENTER]: styles.blockAlignCenter,
+    [PageBlockAlign.BOTTOM]: styles.blockAlignBottom,
+    [PageBlockAlign.STRETCH]: styles.blockAlignStretch,
 };
 
-interface ScreenBlockProps {
-    align: ScreenBlockAlign;
+interface PageBlockProps {
+    align: PageBlockAlign;
     vPadded?: boolean;
     hPadded?: boolean;
     limited?: boolean;
@@ -27,7 +27,7 @@ interface ScreenBlockProps {
     qaRole?: string;
 }
 
-export const ScreenBlock: React.FunctionComponent<ScreenBlockProps> = ({
+export const PageBlock: React.FunctionComponent<PageBlockProps> = ({
     align,
     vPadded,
     hPadded,
@@ -41,7 +41,7 @@ export const ScreenBlock: React.FunctionComponent<ScreenBlockProps> = ({
         <div
             className={cx(
                 styles.block,
-                mapScreenBlockAlignToClassnames[align],
+                mapPageBlockAlignToClassnames[align],
                 hPadded && styles.blockPaddingHorizontal,
                 vPadded && styles.blockPaddingVertical,
                 limited && styles.blockWidthLimited,

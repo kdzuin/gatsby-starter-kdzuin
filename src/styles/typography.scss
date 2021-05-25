@@ -1,7 +1,13 @@
 body {
     font-family: $font-family;
-    font-family: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 1.5;
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    text-rendering: optimizeSpeed;
+    font-kerning: normal;
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
 h1,
@@ -11,12 +17,23 @@ h4,
 h5,
 h6 {
     font-family: $font-heading;
+    font-weight: 600;
 }
 
-h1,
-h2,
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 h3 {
-    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 h1 + h2,
@@ -62,14 +79,21 @@ table + table {
 
 ul,
 ol {
-    margin-left: 2em;
+    margin-left: 0em;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 
     li {
         position: relative;
+        padding-left: 1.3em;
+
+        @media (min-width: 44rem) {
+            margin-left: -1.3em;
+        }
     }
 
     li + li {
@@ -83,22 +107,15 @@ ul {
 
     li::before {
         position: absolute;
-        display: block;
-        right: 100%;
-        margin-right: 15px;
-        top: 0.7em;
-        background-color: currentColor;
-        width: 0.375em;
-        height: 0.375em;
-        border-radius: 50%;
-        content: '';
+        left: 0;
+        content: '— ';
     }
 }
 
 ol {
     li {
         position: relative;
-        padding-left: 10px;
+        padding-left: 1.3em;
     }
 
     li + li {
@@ -116,4 +133,14 @@ table {
     font-size: inherit;
     line-height: inherit;
     font-weight: inherit;
+}
+
+p {
+    hyphens: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
 }

@@ -2,7 +2,11 @@ import { GatsbyConfig } from 'gatsby';
 
 const siteMetadata: GatsbyConfig['siteMetadata'] = {
     title: 'Gatsby Starter',
+    titleTemplate: '%s — Gatsby Starter',
     siteUrl: `https://www.example.com`,
+    lang: 'en',
+    description: 'Gatsby Starter Description',
+    author: 'Konstantin Dzuin',
 };
 
 module.exports = {
@@ -20,7 +24,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                icon: 'src/images/icon.png',
+                icon: 'static/apple-touch-icon.png',
             },
         },
         'gatsby-plugin-typescript',

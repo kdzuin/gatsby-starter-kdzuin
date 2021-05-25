@@ -1,19 +1,20 @@
 import React from 'react';
 
-import { ScreenBlock, ScreenBlockAlign } from 'components/page/page-block';
+import { PageBlock, PageBlockAlign } from 'components/page/page-block';
 
-interface ScreenFooterProps {
+interface PageFooterProps {
     children: React.ReactNode;
 }
 
-export const ScreenFooter: React.FunctionComponent<ScreenFooterProps> = ({
+export const PageFooter: React.FunctionComponent<PageFooterProps> = ({
     children,
 }) => (
-    <ScreenBlock
-        align={ScreenBlockAlign.BOTTOM}
-        hPadded={false}
+    <PageBlock
+        align={PageBlockAlign.BOTTOM}
+        hPadded={true}
+        limited={true}
         qaRole={'page-footer'}
     >
         {children}
-    </ScreenBlock>
+    </PageBlock>
 );

@@ -1,0 +1,30 @@
+@import 'styles/config';
+
+.menu {
+    display: block;
+
+    @media (min-width: 44rem) {
+        display: flex;
+    }
+}
+
+.link a {
+    text-decoration: none;
+
+    &:hover {
+        color: $color-highlight;
+    }
+}
+
+.link.isActive a {
+    text-decoration: underline;
+}
+
+.link + .link {
+    margin-top: 0.5em;
+
+    @media (min-width: 44rem) {
+        margin-top: 0;
+        margin-left: 1em;
+    }
+}

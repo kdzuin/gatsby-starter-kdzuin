@@ -1,24 +1,24 @@
 import React from 'react';
 
-import { ScreenBlock, ScreenBlockAlign } from 'components/page/page-block';
+import { PageBlock, PageBlockAlign } from 'components/page/page-block';
 
-interface ScreenContentProps {
-    align?: ScreenBlockAlign;
+interface PageContentProps {
+    align?: PageBlockAlign;
     hPadded?: boolean;
     vPadded?: boolean;
     limited?: boolean;
     qaRole?: string;
 }
 
-export const ScreenContent: React.FunctionComponent<ScreenContentProps> = ({
-    align = ScreenBlockAlign.TOP,
+export const PageContent: React.FunctionComponent<PageContentProps> = ({
+    align = PageBlockAlign.TOP,
     hPadded,
     vPadded,
     limited,
     children,
     qaRole,
 }) => (
-    <ScreenBlock
+    <PageBlock
         align={align}
         hPadded={hPadded}
         vPadded={vPadded}
@@ -26,5 +26,5 @@ export const ScreenContent: React.FunctionComponent<ScreenContentProps> = ({
         qaRole={qaRole}
     >
         {children}
-    </ScreenBlock>
+    </PageBlock>
 );

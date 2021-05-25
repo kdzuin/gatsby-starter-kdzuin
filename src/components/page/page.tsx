@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import * as styles from './page.module.scss';
 
-interface ScreenProps {
+interface PageProps {
     children: React.ReactNode;
     qaRole?: string;
 }
 
-export const Screen: React.FunctionComponent<ScreenProps> = ({
+export const Page: React.FunctionComponent<PageProps> = ({
     children,
-    qaRole = 'screen',
+    qaRole = 'page',
 }) => {
     return (
         <div className={styles.screen} data-qa={qaRole}>

@@ -1,0 +1,32 @@
+@import 'styles/config';
+
+.block {
+    display: block;
+    padding: 3rem 0;
+
+    @media (min-width: 44rem) {
+        display: flex;
+    }
+}
+
+.siteName {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    a {
+        &:hover {
+            color: $color-highlight;
+        }
+    }
+}
+
+.menu {
+    margin-top: 1em;
+
+    @media (min-width: 44rem) {
+        margin-top: 0;
+        margin-left: auto;
+        padding-left: 2em;
+    }
+}
