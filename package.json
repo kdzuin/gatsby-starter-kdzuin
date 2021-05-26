@@ -2,7 +2,7 @@
     "name": "gatsby-starter-kdzuin",
     "version": "1.0.0",
     "private": true,
-    "description": "Gatsby Starter by KDzuin with TypeScript, SCSS + CSS Modules, Base Layout and Typography",
+    "description": "Gatsby Starter with TypeScript, SCSS + CSS Modules, Base Layout and Typography",
     "author": "Konstantin Dzuin",
     "keywords": [
         "gatsby"
