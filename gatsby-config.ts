@@ -16,6 +16,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-sass',
             options: {
+                // eslint-disable-next-line @typescript-eslint/no-var-requires
                 postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
             },
         },

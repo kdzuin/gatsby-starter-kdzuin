@@ -3,7 +3,9 @@ import React from 'react';
 
 import * as styles from './footer.module.scss';
 
-interface FooterProps {}
+interface FooterProps {
+    children?: never;
+}
 
 const YEAR = new Date().getFullYear();
 

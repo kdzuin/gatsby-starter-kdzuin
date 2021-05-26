@@ -10,9 +10,9 @@ export const PageFooter: React.FunctionComponent<PageFooterProps> = ({
     children,
 }) => (
     <PageBlock
-        align={PageBlockAlign.BOTTOM}
-        hPadded={true}
-        limited={true}
+        align={PageBlockAlign.bottom}
+        hPadded
+        limited
         qaRole={'page-footer'}
     >
         {children}

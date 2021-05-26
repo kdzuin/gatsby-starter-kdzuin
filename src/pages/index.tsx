@@ -6,7 +6,7 @@ export default () => {
     return (
         <>
             <Helmet title="Home" />
-            <PageContent vPadded={true} hPadded={true} limited={true}>
+            <PageContent vPadded hPadded limited>
                 <h1>Page title</h1>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.

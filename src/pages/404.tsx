@@ -6,7 +6,7 @@ export default () => {
     return (
         <>
             <Helmet title="Not Found" />
-            <PageContent vPadded={true} hPadded={true} limited={true}>
+            <PageContent vPadded hPadded limited>
                 <h1>Page not found</h1>
                 <p>Sorry we couldn’t find what you were looking for.</p>
             </PageContent>

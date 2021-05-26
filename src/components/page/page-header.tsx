@@ -10,9 +10,9 @@ export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({
     children,
 }) => (
     <PageBlock
-        align={PageBlockAlign.TOP}
-        hPadded={true}
-        limited={true}
+        align={PageBlockAlign.top}
+        hPadded
+        limited
         qaRole={'page-header'}
     >
         {children}

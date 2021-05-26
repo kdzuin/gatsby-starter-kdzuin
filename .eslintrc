@@ -1,0 +1,7 @@
+{
+    "extends": "tamia/typescript-react",
+    "rules": {
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error"
+    }
+}

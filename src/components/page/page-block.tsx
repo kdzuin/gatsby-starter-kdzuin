@@ -1,20 +1,20 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import cx from 'classnames';
 import * as styles from './page.module.scss';
 
 export enum PageBlockAlign {
-    TOP,
-    CENTER,
-    BOTTOM,
-    STRETCH,
+    top,
+    center,
+    bottom,
+    stretch,
 }
 
 const mapPageBlockAlignToClassnames: { [key in PageBlockAlign]: string } = {
-    [PageBlockAlign.TOP]: styles.blockAlignTop,
-    [PageBlockAlign.CENTER]: styles.blockAlignCenter,
-    [PageBlockAlign.BOTTOM]: styles.blockAlignBottom,
-    [PageBlockAlign.STRETCH]: styles.blockAlignStretch,
+    [PageBlockAlign.top]: styles.blockAlignTop,
+    [PageBlockAlign.center]: styles.blockAlignCenter,
+    [PageBlockAlign.bottom]: styles.blockAlignBottom,
+    [PageBlockAlign.stretch]: styles.blockAlignStretch,
 };
 
 interface PageBlockProps {

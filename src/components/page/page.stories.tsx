@@ -72,10 +72,10 @@ export const PaddedContentBlocks = () => (
         <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
         </PageHeader>
-        <PageContent hPadded={true}>
+        <PageContent hPadded>
             <Placeholder height={300}>ScreenContent</Placeholder>
         </PageContent>
-        <PageContent hPadded={true} vPadded={true}>
+        <PageContent hPadded vPadded>
             <Placeholder height={300}>ScreenContent</Placeholder>
         </PageContent>
         <PageFooter>
@@ -89,10 +89,10 @@ export const PaddedAndLimitedBlocks = () => (
         <PageHeader>
             <Placeholder>ScreenHeader</Placeholder>
         </PageHeader>
-        <PageContent hPadded={true} limited={true}>
+        <PageContent hPadded limited>
             <Placeholder height={300}>ScreenContent</Placeholder>
         </PageContent>
-        <PageContent hPadded={true} vPadded={true} limited={true}>
+        <PageContent hPadded vPadded limited>
             <Placeholder height={300}>ScreenContent</Placeholder>
         </PageContent>
         <PageFooter>

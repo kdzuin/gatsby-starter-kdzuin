@@ -11,7 +11,7 @@ interface PageContentProps {
 }
 
 export const PageContent: React.FunctionComponent<PageContentProps> = ({
-    align = PageBlockAlign.TOP,
+    align = PageBlockAlign.top,
     hPadded,
     vPadded,
     limited,

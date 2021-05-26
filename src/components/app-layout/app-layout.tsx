@@ -55,7 +55,7 @@ const AppLayout: React.FunctionComponent<AppLayoutProps> = ({
 
                     <Page>
                         <PageHeader>
-                            <Header location={location}></Header>
+                            <Header location={location} />
                         </PageHeader>
                         {children}
                         <PageFooter>
